@@ -65,12 +65,12 @@ body {
 }
 
 .overlay {
+  display: flex;
+  flex-direction: column;
   /* position: absolute; */
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
-  flex-direction: column;
 }
 
 .cover__title {
@@ -139,10 +139,10 @@ body {
 }
 
 .lots__heading {
+  margin-left: 40px;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
-  margin-left: 40px;
 }
 
 .lots__card-list {
@@ -160,14 +160,15 @@ body {
 
 .card-link {
   height: 100%;
+  text-decoration: none;
 }
 
 .card {
   /* position: relative; */
   display: flex;
   flex-direction: column;
-  height: 100%;
   justify-content: space-between;
+  height: 100%;
   background-position: center;
   background-size: cover;
 }
@@ -179,19 +180,14 @@ body {
   font-size: 22px;
   line-height: 120%;
   text-decoration: underline;
-  text-transform: uppercase;
   text-underline-offset: 2px;
-  
+  text-transform: uppercase;
 }
 
 .card__text {
-  line-height: 1.2;
-  color: #fff;
   margin: auto 40px 48px 40px;
-}
-
-.card-link {
-  text-decoration: none;
+  color: #fff;
+  line-height: 1.2;
 }
 
 .card_type_film {
@@ -215,21 +211,21 @@ body {
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
-  background-color: #fff;
-  padding: 0px 24px 180px 24px;
   align-items: center;
   gap: 8px 25px;
+  padding: 0px 24px 180px 24px;
+  background-color: #fff;
 }
 
 .about__logo {
   display: flex;
-  background-color: #000;
-  border-radius: 1000px;
+  justify-self: center;
+  justify-content: center;
   width: 240px;
   height: 240px;
-  justify-content: center;
-  justify-self: center;
   margin-top: 35px;
+  border-radius: 1000px;
+  background-color: #000;
 }
 
 .about__logo-image {
@@ -237,16 +233,16 @@ body {
 }
 
 .about__title {
+  margin-top: 44px;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
-  margin-top: 44px;
 }
 
 .about__text {
   display: flex;
-  gap: 24px;
   flex-direction: column;
+  gap: 24px;
   line-height: 1.2;
 }
 
@@ -267,10 +263,10 @@ body {
 
 .footer__menu-list {
   display: flex;
-  gap: 0px;
-  list-style: none;
   flex-direction: column;
   align-items: center;
+  gap: 0px;
+  list-style: none;
 }
 
 .footer__menu-link {
